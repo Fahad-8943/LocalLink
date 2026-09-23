@@ -1,0 +1,136 @@
+/* ==========================================================================
+   LOCAL LINK — GLOBAL DESIGN SYSTEM & TOKENS
+   ========================================================================== */
+
+:root {
+  /* Color Palette — Restrained, Trustworthy, Professional */
+  --color-primary: #1e293b;        /* Deep Slate Navy */
+  --color-primary-hover: #0f172a;  /* Darker Navy on hover */
+  --color-primary-light: #f1f5f9;  /* Subtle navy tint */
+  --color-primary-border: #cbd5e1;
+
+  --color-accent: #0d9488;         /* Calm Teal / Location Accent */
+  --color-accent-hover: #0f766e;   /* Darker Teal */
+  --color-accent-light: #f0fdfa;   /* Subtle teal tint */
+  --color-accent-border: #99f6e4;  /* Crisp teal border */
+
+  --color-bg: #f8fafc;             /* Neutral off-white page background */
+  --color-surface: #ffffff;        /* Pure white for cards/surfaces */
+  --color-surface-hover: #fafafa;
+  --color-surface-alt: #f1f5f9;
+
+  --color-border: #e2e8f0;         /* Default border */
+  --color-border-hover: #cbd5e1;
+  --color-border-strong: #94a3b8;
+
+  --color-text: #0f172a;           /* Dark Charcoal */
+  --color-text-muted: #64748b;     /* Muted Slate */
+  --color-text-subtle: #94a3b8;    /* Subtle placeholder/caption */
+  --color-text-inverse: #ffffff;
+
+  --color-danger: #dc2626;         /* Restrained red for deletion */
+  --color-danger-hover: #b91c1c;
+  --color-danger-light: #fef2f2;
+  --color-danger-border: #fecaca;
+
+  --color-success: #15803d;        /* Balanced green for success */
+  --color-success-light: #f0fdf4;
+  --color-success-border: #bbf7d0;
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+
+  /* Component Radii */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 9999px;
+
+  /* Elevation / Shadows (restrained, subtle) */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout Max Width */
+  --container-max-width: 1140px;
+}
+
+/* ==========================================================================
+   CSS RESET & BASE
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: var(--line-height-normal);
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text);
+  font-weight: 600;
+  line-height: var(--line-height-tight);
+}
+
+h1 { font-size: var(--font-size-3xl); }
+h2 { font-size: var(--font-size-2xl); }
+h3 { font-size: var(--font-size-xl); }
+h4 { font-size: var(--font-size-lg); }
+
+p {
+  color: var(--color-text-muted);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
