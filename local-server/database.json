@@ -159,6 +159,22 @@
       "workingHours": "8:30 AM - 5:30 PM",
       "latitude": 11.339,
       "longitude": 75.75
+    },
+    {
+      "serviceName": "Nava Photos",
+      "category": "Photography",
+      "description": "Photo, Wedding ..",
+      "price": "2000",
+      "location": "Kozhikode",
+      "phone": "8945235689",
+      "availability": "All day",
+      "workingHours": "9:00 AM -9:00 PM",
+      "latitude": 11.259153328826313,
+      "longitude": 75.78366910155579,
+      "providerId": "nLK14QJ",
+      "providerName": "Navaneeth",
+      "rating": 0,
+      "id": "p4V0Zdw"
     }
   ],
   "users": [
@@ -189,6 +205,13 @@
       "username": "manu123",
       "password": "1234",
       "role": "provider"
+    },
+    {
+      "name": "Navaneeth",
+      "username": "nava123",
+      "password": "1234",
+      "role": "provider",
+      "id": "nLK14QJ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
